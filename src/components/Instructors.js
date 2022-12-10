@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import team1 from '../img/team-1.jpg';
-import team2 from '../img/team-2.jpg';
-import team3 from '../img/team-3.jpg';
-import team4 from '../img/team-4.jpg';
+import team1 from '../Images/team-1.jpg';
+import team2 from '../Images/team-2.jpg';
+import team3 from '../Images/team-3.jpg';
+import team4 from '../Images/team-4.jpg';
 
 import InstructorItem from './items/InstructorItem';
 

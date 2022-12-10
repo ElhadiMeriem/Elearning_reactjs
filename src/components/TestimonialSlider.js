@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
-import testimonial1 from '../img/testimonial-1.jpg';
-import testimonial2 from '../img/testimonial-2.jpg';
-import testimonial3 from '../img/testimonial-2.jpg';
-import testimonial4 from '../img/testimonial-2.jpg';
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
+import testimonial1 from '../Images/testimonial-1.jpg';
+import testimonial2 from '../Images/testimonial-2.jpg';
+import testimonial3 from '../Images/testimonial-2.jpg';
+import testimonial4 from '../Images/testimonial-2.jpg';
+
+
 
 class TestimonialSlider extends Component {
     render() {

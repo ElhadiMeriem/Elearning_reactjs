@@ -6,7 +6,6 @@ import Instructors from '../components/Instructors';
 import Footer from '../components/Footer';
 import HomeSlider from '../components/HomeSlider';
 import TestimonialSlider from '../components/TestimonialSlider';
-import Categories from '../components/Categories';
 import CourseSection from '../components/CourseSection';
 
 const Home = () => {
@@ -16,7 +15,6 @@ const Home = () => {
             <HomeSlider />
             <Services />
             <Aboutsection />
-            <Categories />
             <CourseSection />
             <Instructors />
             <TestimonialSlider />

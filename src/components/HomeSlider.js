@@ -2,8 +2,8 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import React, { Component } from 'react';
-import bg1 from "../img/carousel-1.jpg";
-import bg2 from "../img/carousel-2.jpg";
+import bg1 from "../Images/carousel-1.jpg";
+import bg2 from "../Images/carousel-2.jpg";
 
 class HomeSlider extends Component {
     render() {
