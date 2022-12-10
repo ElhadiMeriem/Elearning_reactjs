@@ -6,9 +6,43 @@ import testimonial1 from '../Images/testimonial-1.jpg';
 import testimonial2 from '../Images/testimonial-2.jpg';
 import testimonial3 from '../Images/testimonial-2.jpg';
 import testimonial4 from '../Images/testimonial-2.jpg';
+import TestimoialItem from './items/TestimonialItem';
 
 
 
+const testimonials = [
+    {
+        "name": "Client Name",
+        "subtitle": "Profession",
+        "img": testimonial1,
+        "designation": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
+
+
+    },
+    {
+        "name": "Client Name",
+        "subtitle": "Profession",
+        "img": testimonial2,
+        "designation": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
+
+
+    },
+    {
+        "name": "Client Name",
+        "subtitle": "Profession",
+        "img": testimonial3,
+        "designation": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
+
+
+    },
+    {
+        "name": "Client Name",
+        "subtitle": "Profession",
+        "img": testimonial4,
+        "designation": "Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.",
+
+    }
+]
 class TestimonialSlider extends Component {
     render() {
         return (
@@ -24,52 +58,13 @@ class TestimonialSlider extends Component {
                         autoplay
                     >
                         <div className="item">
-                            <div className="text-center">
-                                <img className="border rounded-circle p-2 mx-auto mb-3" src={testimonial1} style={{ width: 80, height: 80 }}  alt =""/>
-                                <h5 className="mb-0">Client Name</h5>
-                                <p>Profession</p>
-                                <div className="testimonial-text bg-light text-center p-4">
-                                    <p className="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                                </div>
-                            </div>
+                            {testimonials.map((t, index) => (
+                                <TestimoialItem key={index} obj={t} />
+                            ))}
                         </div>
-                        <div className="item">
-                            <div className="text-center">
-                                <img className="border rounded-circle p-2 mx-auto mb-3" src={testimonial2} style={{ width: 80, height: 80 }} alt=""/>
-                                <h5 className="mb-0">Client Name</h5>
-                                <p>Profession</p>
-                                <div className="testimonial-text bg-light text-center p-4">
-                                    <p className="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="text-center">
-                                <img className="border rounded-circle p-2 mx-auto mb-3" src={testimonial3} style={{ width: 80, height: 80 }}  alt =""/>
-                                <h5 className="mb-0">Client Name</h5>
-                                <p>Profession</p>
-                                <div className="testimonial-text bg-light text-center p-4">
-                                    <p className="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="item">
-                            <div className="text-center">
-                                <img className="border rounded-circle p-2 mx-auto mb-3" src={testimonial4} style={{ width: 80, height: 80 }} alt =""/>
-                                <h5 className="mb-0">Client Name</h5>
-                                <p>Profession</p>
-                                <div className="testimonial-text bg-light text-center p-4">
-                                    <p className="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                                </div>
-                            </div>
-                        </div>
-
                     </OwlCarousel>
-
                 </div>
             </div>
-
-
         );
     }
 }
